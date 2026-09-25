@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stress-AI | AI Solution Stress Tester</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <div class="brand">
+            <div class="brand-icon">S</div>
+            <span>Stress-AI</span>
+        </div>
+
+        <div class="nav-subtitle">
+            AI Solution Stress Tester
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-badge">
+            AI Risk Intelligence
+        </div>
+
+        <h1>
+            Stress-Test Your
+            <span>AI Solution</span>
+            <br>
+            Before You Build It.
+        </h1>
+
+        <p>
+            Discover technical, cost, privacy, security, fairness and
+            operational risks before your AI solution reaches the real world.
+        </p>
+
+
+        <!-- INPUT CARD -->
+        <div class="input-card">
+
+            <label for="solution">
+                Describe your AI solution
+            </label>
+
+            <textarea
+                id="solution"
+                maxlength="5000"
+                placeholder="Example: I want to build an AI system that predicts whether college students are likely to get a job based on their CGPA, skills and internships..."
+            ></textarea>
+
+            <div class="input-footer">
+
+                <span id="charCount">
+                    0 characters
+                </span>
+
+                <button id="analyzeBtn">
+                    Analyze Solution
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOADING -->
+    <section id="loadingSection" class="loading-section hidden">
+
+        <div class="loader"></div>
+
+        <h3>Stress-testing your AI solution...</h3>
+
+        <p>
+            Our AI agents are analyzing technical, privacy, security,
+            fairness, cost and operational risks.
+        </p>
+
+    </section>
+
+
+    <!-- REPORT -->
+    <section id="reportSection" class="report-section hidden">
+
+        <div class="report-header">
+
+            <div>
+                <div class="report-badge">
+                    AI Stress Report
+                </div>
+
+                <h2>
+                    Solution Risk Assessment
+                </h2>
+            </div>
+
+            <button id="newAnalysisBtn" class="new-analysis">
+                New Analysis
+            </button>
+
+        </div>
+
+
+        <!-- SCORE -->
+        <div class="score-card">
+
+            <div class="score-label">
+                Overall Stress Score
+            </div>
+
+            <div class="score-row">
+
+                <span id="overallScore">
+                    0
+                </span>
+
+                <small>
+                    / 100
+                </small>
+
+            </div>
+
+            <div id="riskLevel" class="risk-level">
+                High
+            </div>
+
+            <p id="riskMessage">
+                Proceed with Caution
+            </p>
+
+        </div>
+
+
+        <!-- RISK BREAKDOWN -->
+        <div class="section-title">
+            Risk Breakdown
+        </div>
+
+        <div class="risk-grid">
+
+            <div class="risk-card">
+                <span>Technical</span>
+                <strong id="technicalScore">--/100</strong>
+            </div>
+
+            <div class="risk-card">
+                <span>Cost</span>
+                <strong id="costScore">--/100</strong>
+            </div>
+
+            <div class="risk-card">
+                <span>Privacy</span>
+                <strong id="privacyScore">--/100</strong>
+            </div>
+
+            <div class="risk-card">
+                <span>Security</span>
+                <strong id="securityScore">--/100</strong>
+            </div>
+
+            <div class="risk-card">
+                <span>Fairness</span>
+                <strong id="fairnessScore">--/100</strong>
+            </div>
+
+            <div class="risk-card">
+                <span>Operational</span>
+                <strong id="operationalScore">--/100</strong>
+            </div>
+
+        </div>
+
+
+        <!-- TWO COLUMN -->
+        <div class="two-column">
+
+            <div class="report-card">
+
+                <h3>
+                    🚨 Critical Risks
+                </h3>
+
+                <ul id="criticalRisks">
+                    <li>Analysis results will appear here.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <h3>
+                    ⚠️ Top Risks
+                </h3>
+
+                <ul id="topRisks">
+                    <li>Analysis results will appear here.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- STRENGTHS -->
+        <div class="report-card full-card">
+
+            <h3>
+                ✓ Strengths
+            </h3>
+
+            <ul id="strengths">
+                <li>Analysis results will appear here.</li>
+            </ul>
+
+        </div>
+
+
+        <!-- ACTIONS -->
+        <div class="report-card full-card">
+
+            <h3>
+                💡 Recommended Actions
+            </h3>
+
+            <ul id="actions">
+                <li>Analysis results will appear here.</li>
+            </ul>
+
+        </div>
+
+
+        <!-- FINAL VERDICT -->
+        <div class="verdict-card">
+
+            <h3>
+                Final Verdict
+            </h3>
+
+            <p id="finalVerdict">
+                Your AI solution assessment will appear here after analysis.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    Stress-AI · AI Solution Risk Intelligence
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
